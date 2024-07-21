@@ -2,7 +2,8 @@
 
 # Site WaveCast
 
-![image](https://github.com/user-attachments/assets/2940ce62-1bcf-4799-adf4-467418abfd4f)
+![image](https://github.com/user-attachments/assets/52b82314-0010-4739-9189-90bc3ad14a78)
+
 
 #### Projeto de Estudo em CSS (Cascading Style Sheets)
 
