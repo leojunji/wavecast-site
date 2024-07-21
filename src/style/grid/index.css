@@ -1,0 +1,33 @@
+body {
+  display: grid;
+
+  /*===================================================*/
+  /*What if, we wanted that the main was bigger than the aside. We would put like this:
+  
+    grid-template-areas:
+    "aside header header"
+    "aside main main";
+  */
+
+  /*In the example below, the main has the same size of the aside. And we have two(2) columns*/
+  /*===================================================*/
+
+  grid-template-areas:
+    "aside header"
+    "aside main";
+  grid-template-columns: auto 1fr; /*width of each columns. In this case we have 2 columns */
+}
+
+.cabecalho {
+  grid-area: header;
+}
+
+/*aqui, estou chamando o menu-lateral. Nessa file, o menu-lateral é um filho de body, já na file menu.css
+o menu-lateral é um pai, pois na file menu.css, estamos aplicando um display: grid nele para organizar os filhos dele*/
+.menu-lateral {
+  grid-area: aside;
+}
+
+.principal {
+  grid-area: main;
+}

@@ -1,0 +1,11 @@
+.navbar__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+.navbar__item button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.4rem; /*since this is aligned in column. We have lines(and not columns), so the better propertie is row-gap, but you can use gap as well, but it last, will set 
+  both row and column gap*/
+}

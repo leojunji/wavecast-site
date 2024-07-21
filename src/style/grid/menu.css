@@ -1,0 +1,20 @@
+.menu-lateral {
+  display: grid;
+  grid-template-rows: repeat(3, auto) 1fr; /*repeat(3,auto) 1fr;=auto auto auto 1fr;*/
+  row-gap: 2rem; /*space between lines*/
+}
+
+/*
+here, the justify-self only works with parents(e.g., menu-lateral) whos is display(e.g., flex, grid, etc...)
+and/or with his childrens(e.g., menu-lateral__logo). If we use justify-self at an img(tag) directly(.menu-lateral__logo img {justify-self: center;}), 
+it would not work, since .menu-lateral__logo Is not an display(e.g., flex, grid, etc...), just his father
+
+.*/
+.menu-lateral__logo {
+  justify-self: center;
+}
+
+.menu-lateral nav .menu-lateral__link {
+  display: flex;
+  align-items: center;
+}
