@@ -1,0 +1,33 @@
+.btn-container {
+  position: fixed;
+  right: 2%;
+  bottom: 2%;
+  color: red;
+}
+
+.btn-repo {
+  --btn-border: 30px;
+  --btn-size: 5rem;
+  overflow: hidden;
+  display: block;
+  height: var(--btn-size);
+  width: var(--btn-size);
+  border-radius: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo {
+  max-width: inherit;
+  max-height: inherit;
+  height: inherit;
+  width: inherit;
+}
+
+.btn-container:hover {
+  filter: sepia(1) saturate(10) hue-rotate(-30deg);
+  transform: translateY(-5px);
+}
+
+.btn-container:active {
+  transform: translateY(5px);
+}
